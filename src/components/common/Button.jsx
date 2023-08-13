@@ -6,8 +6,8 @@ const Button = ({ className, children }) => {
     <div>
       <button
         className={clsxm([
-          className,
           "rounded-sm px-3 py-1 text-primary font-normal font-poppins",
+          className,
         ])}
       >
         {children}
