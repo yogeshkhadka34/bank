@@ -4,16 +4,16 @@ import { feedback } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col flex-start mt-10 mx-16 px-16 text-white">
+    <div className=" container flex flex-col flex-start mt-10  text-white">
       {/* Top Section */}
-      <div className="flex flex-start items-center">
+      <div className="flex flex-start flex-col md:flex-row  items-center">
         <div className=" flex-1">
-          <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px]">
+          <h2 className="text-[32px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[50px] md:leading-[75px] mt-16">
             What People are <br className="sm:block hidden" /> saying about us
           </h2>
         </div>
-        <div className=" flex-1">
-          <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] text-left max-w-[450px]">
+        <div className=" flex-1 flex-start">
+          <p className="font-poppins font-normal  max-w-[360px] mt-4 text-dimWhite text-[18px] leading-[30.8px] text-left md:max-w-[450px]">
             Everything you need to accept card payments and grow your business
             anywhere on the planet.
           </p>
@@ -21,17 +21,21 @@ const Testimonials = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="flex flex-start justify-between items-center mt-16">
+      <div className="flex flex-start flex-col md:flex-row justify-between items-center mt-16">
         {feedback.map((list) => (
           <TestimonialsCard key={list.id} {...list} />
         ))}
       </div>
       {/* Logos Section */}
-      <div className="flex flex-start justify-around items-center align-baseline mb-10">
-        <img src={airbnb} alt="Airbnb" className="w-[192px] h-[38px]" />
-        <img src={binance} alt="Binance" className="w-[192px] h-[38px]" />
-        <img src={coinbase} alt="Coinbase" className="w-[192px] h-[38px]" />
-        <img src={dropbox} alt="Dropbox" className="w-[192px] h-[38px]" />
+      <div className="flex flex-start flex-col flex-nowrap md:flex-row justify-around items-center align-baseline mb-10">
+        <img src={airbnb} alt="Airbnb" className="w-[192px] h-[38px] my-4" />
+        <img src={binance} alt="Binance" className="w-[192px] h-[38px] my-4 " />
+        <img
+          src={coinbase}
+          alt="Coinbase"
+          className="w-[192px] h-[38px] my-4"
+        />
+        <img src={dropbox} alt="Dropbox" className="w-[192px] h-[38px] my-4" />
       </div>
     </div>
   );

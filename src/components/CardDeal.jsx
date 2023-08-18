@@ -4,10 +4,10 @@ import { card } from "../assets";
 
 const CardDeal = () => {
   return (
-    <div className="mx-16 px-16 py-6 mt-10 flex justify-between items-center">
+    <div className="py-6 mt-10 flex flex-col md:flex-row justify-between items-center container">
       {/* Left Section */}
       <div className="text-white flex-1 mr-10">
-        <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
+        <h2 className="text-[32px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[50px] md:leading-[75px] mt-16">
           Find a better card deal <br className="sm:block hidden" /> in few easy
           steps.
         </h2>
@@ -19,8 +19,12 @@ const CardDeal = () => {
       </div>
 
       {/* Right Section */}
-      <div className="text-white flex-1 ml-10">
-        <img src={card} alt="Card Deal" />
+      <div className="text-white flex-1 md:ml-10 flex justify-center items-center">
+        <img
+          src={card}
+          alt="Card Deal"
+          className="w-[80%] h-[80%] mt-16 md:mt-4"
+        />
       </div>
     </div>
   );

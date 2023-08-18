@@ -3,8 +3,8 @@ import { stats } from "../constants";
 
 const Stats = () => {
   return (
-    <div className="py-6 px-16 xl:py-2">
-      <div className="flex flex-start justify-between mx-16">
+    <div className="container">
+      <div className="flex flex-col flex-start items-start md:justify-between md:flex-row">
         {stats.map((stat) => (
           <div key={stat.id} className="flex justify-center items-center mr-10">
             <h1 className="text-white text-[24px] font-poppins font-semibold">

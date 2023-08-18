@@ -10,8 +10,8 @@ import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <div className="bg-primary">
-      <div className="max-w-[1600px] mx-auto">
+    <div className="bg-primary flex justify-center items-center overflow-x-hidden">
+      <div className="max-w-[1600px]  ">
         <Navbar />
         <HeroSection />
         <Stats />

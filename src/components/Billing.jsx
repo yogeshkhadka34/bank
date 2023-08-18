@@ -3,7 +3,7 @@ import { bill, apple, google } from "../assets";
 
 const Billing = () => {
   return (
-    <div className="mx-16 px-16 py-6 flex justify-between items-center text-white">
+    <div className="py-6 flex flex-col md:flex-row justify-between items-center text-white container">
       {/* Left Side */}
       <div className="flex-1 mr-16 relative z-[5]">
         <img src={bill} alt="Billing" />
@@ -15,7 +15,7 @@ const Billing = () => {
 
       {/* Right Side */}
       <div className="text-white flex-1">
-        <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
+        <h2 className=" text-[32px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[50px] md:leading-[75px] smt-16">
           Easily control your <br className="sm:block hidden" /> billing &
           invoicing
         </h2>

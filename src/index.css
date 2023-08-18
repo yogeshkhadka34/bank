@@ -4,6 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utility{
+  /* Container Classes */
+  .container {
+      @apply py-8 pl-4 lg:mx-4 lg:px-4 xl:mb-0;
+    }
+
+  /* Text Classes */
+  .heading{
+    @apply font-poppins font-semibold  text-[44px] leading-[75px] lg:leading-[100.8px] lg:text-[72px];
+  }
+
+  .paragraph{
+    @apply text-white;
+  }
+}
+
 :root {
   --black-gradient: linear-gradient(144.39deg,
       #ffffff -278.56%,

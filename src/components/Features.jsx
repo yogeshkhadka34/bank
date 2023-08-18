@@ -4,10 +4,10 @@ import Button from "./common/Button";
 
 const Features = () => {
   return (
-    <div className="mx-16 px-16 py-6 flex justify-between items-center">
+    <div className=" py-6 flex flex-col items-start md:justify-between md:items-center container md:flex-row">
       {/* Left Section */}
       <div className="text-white flex-1">
-        <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
+        <h2 className="text-[32px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[50px] md:leading-[75px] mt-16">
           You do the business, <br className="sm:block hidden" /> we’ll handle
           the money.
         </h2>
