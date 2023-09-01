@@ -3,7 +3,7 @@ import { stats } from "../constants";
 
 const Stats = () => {
   return (
-    <div className="container">
+    <div className="container mb-8">
       <div className="flex flex-col flex-start items-start md:justify-between md:flex-row">
         {stats.map((stat) => (
           <div key={stat.id} className="flex justify-center items-center mr-10">
