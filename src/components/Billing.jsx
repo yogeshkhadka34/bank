@@ -3,10 +3,14 @@ import { bill, apple, google } from "../assets";
 
 const Billing = () => {
   return (
-    <div className="py-6 flex flex-col md:flex-row justify-between items-center text-white container">
+    <div className="container section mt-4 flex flex-col gap-6 md:gap-12 md:flex-row justify-center items-center md:justify-start ">
       {/* Left Side */}
-      <div className="flex-1 mr-16 relative z-[5]">
-        <img src={bill} alt="Billing" />
+      <div className="flex-1 relative md:h-full md:w-full ">
+        <img
+          src={bill}
+          alt="Billing"
+          className="object-scaledown md:inset-0 md:object-contain"
+        />
         {/* gradient start */}
         <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
         <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
@@ -14,17 +18,16 @@ const Billing = () => {
       </div>
 
       {/* Right Side */}
-      <div className="text-white flex-1">
-        <h2 className=" text-[32px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[50px] md:leading-[75px] smt-16">
-          Easily control your <br className="sm:block hidden" /> billing &
-          invoicing
+      <div className="flex-1 mt-8 sm:mt-0">
+        <h2 className="heading ">
+          Easily control your <br /> billing & invoicing
         </h2>
-        <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[470px] mt-5">
+        <p className="paragraph mt-4">
           Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
           aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
           placerat.
         </p>
-        <div className="flex flex-start mt-5">
+        <div className="flex flex-start mt-8">
           <img src={apple} alt="Apple" className="mr-16" />
           <img src={google} alt="Google" />
         </div>

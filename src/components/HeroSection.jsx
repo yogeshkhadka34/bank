@@ -5,24 +5,26 @@ import styles from "../style";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col justify-between items-center container md:flex-row">
-      <div className="flex flex-1 flex-col flex-start  justify-between ">
+    <div className="flex flex-col justify-start items-start container md:flex-row  py-4 md:py-[unset]">
+      <div className="flex flex-1 flex-col flex-start  justify-between md:self-center">
         <Discount />
         <HeroText />
       </div>
       {/* Hero Image */}
-      <div className="flex-1 mt-8 md:mt-1 lg:my-10 relative shrink-0">
-        <img
-          src={robot}
-          alt="robot"
-          className="h-[80%] w-[80%] md:h-[min(420px,100%)] md:w-[100%] lg:h-[100%] lg:w-[100%] relative z-[5]"
-        />
+      <div className="flex-1 relative md:-mr-[18%] lg:-mr-[10%]">
+        <div className="max-w-[25rem] ss:max-w-[30rem] sm:max-w-[40rem]  md:w-full">
+          <img
+            src={robot}
+            alt="robot"
+            className=" w-full aspect-square object-scale-down"
+          />
+        </div>
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
-        <div className="my-6 flex justify-around">
+        <div className="my-6 flex justify-around ss:hidden">
           <GetStarted />
         </div>
       </div>
@@ -47,20 +49,17 @@ const HeroText = () => {
   return (
     <div className="flex-1">
       <div className="flex justify-between mt-5">
-        <h1 className=" text-[40px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[75px] ">
-          The Next
-          <br />
+        <h1 className=" heading_hero ">
+          The Next <br className="hidden xs:block" />
           <span className="text-gradient ">Generation</span>
         </h1>
-        <div className="mr-10 sm:mr-0 hidden sm:flex">
+        <div className="mr-10 sm:mr-0 hidden ss:flex">
           <GetStarted />
         </div>
       </div>
       <div>
-        <h1 className="text-[40px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[75px]  ">
-          Payment Method.
-        </h1>
-        <p className="font-poppins font-normal mt-10 text-dimWhite text-[18px] leading-[30.8px] max-w-[320px] md:max-w-[480px] ">
+        <h1 className="heading_hero ">Payment Method.</h1>
+        <p className="paragraph_hero ">
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.

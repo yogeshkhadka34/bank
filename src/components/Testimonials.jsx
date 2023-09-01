@@ -4,38 +4,32 @@ import { feedback } from "../constants";
 
 const Testimonials = () => {
   return (
-    <div className=" container flex flex-col flex-start mt-10  text-white">
+    <div className="container  mt-10 ">
       {/* Top Section */}
-      <div className="flex flex-start flex-col md:flex-row  items-center">
-        <div className=" flex-1">
-          <h2 className="text-[32px] font-poppins font-semibold lg:text-[72px] md:text-[60px] sm:text-[52px] text-white lg:leading-[100.8px] leading-[50px] md:leading-[75px] mt-16">
-            What People are <br className="sm:block hidden" /> saying about us
-          </h2>
-        </div>
-        <div className=" flex-1 flex-start">
-          <p className="font-poppins font-normal  max-w-[360px] mt-4 text-dimWhite text-[18px] leading-[30.8px] text-left md:max-w-[450px]">
-            Everything you need to accept card payments and grow your business
-            anywhere on the planet.
-          </p>
-        </div>
+      <div className="flex justify-start flex-col items-start pl-8">
+        <h2 className="heading mt-16  ">
+          What People are <br className="block md:hidden" /> saying about us
+        </h2>
+        <p className="paragraph mt-4">
+          Everything you need to accept card payments and grow your business
+          anywhere on the planet.
+        </p>
       </div>
 
-      {/* Cards Section */}
-      <div className="flex flex-start flex-col md:flex-row justify-between items-center mt-16">
-        {feedback.map((list) => (
-          <TestimonialsCard key={list.id} {...list} />
-        ))}
-      </div>
-      {/* Logos Section */}
-      <div className="flex flex-start flex-col flex-nowrap md:flex-row justify-around items-center align-baseline mb-10">
-        <img src={airbnb} alt="Airbnb" className="w-[192px] h-[38px] my-4" />
-        <img src={binance} alt="Binance" className="w-[192px] h-[38px] my-4 " />
-        <img
-          src={coinbase}
-          alt="Coinbase"
-          className="w-[192px] h-[38px] my-4"
-        />
-        <img src={dropbox} alt="Dropbox" className="w-[192px] h-[38px] my-4" />
+      <div className=" flex flex-col justify-center items-center text-white">
+        {/* Cards Section */}
+        <div className="flex flex-start flex-col md:flex-row justify-between items-center mt-16">
+          {feedback.map((list) => (
+            <TestimonialsCard key={list.id} {...list} />
+          ))}
+        </div>
+        {/* Logos Section */}
+        <div className="flex flex-start flex-wrap gap-8 md:gap-16 xl:gap-28 md:flex-row justify-around items-center align-baseline mb-4">
+          <img src={airbnb} alt="Airbnb" className="brand_image" />
+          <img src={binance} alt="Binance" className="brand_image " />
+          <img src={coinbase} alt="Coinbase" className="brand_image" />
+          <img src={dropbox} alt="Dropbox" className="brand_image" />
+        </div>
       </div>
     </div>
   );
@@ -43,7 +37,7 @@ const Testimonials = () => {
 
 const TestimonialsCard = ({ content, name, title, img }) => {
   return (
-    <div className="flex flex-col items-start px-10 py-12 max-w-[370px] feedback-card mb-10 rounded-[20px] ">
+    <div className="flex flex-col items-start px-10 py-12 max-w-[30rem] feedback-card mb-10 rounded-[20px] ">
       {/* // Image */}
       <div>
         <img
@@ -54,13 +48,11 @@ const TestimonialsCard = ({ content, name, title, img }) => {
       </div>
       {/* // Contents */}
       <div>
-        <p className="font-poppins font-normal text-[18px] leading-[32.4px] text-white my-10">
-          {content}
-        </p>
+        <p className="paragraph mt-4">{content}</p>
       </div>
 
       {/* // person Details */}
-      <div className="flex items-center">
+      <div className="flex items-center mt-8">
         {/* Image */}
         <div>
           <img
@@ -71,10 +63,10 @@ const TestimonialsCard = ({ content, name, title, img }) => {
         </div>
         {/* Name and Postion */}
         <div className="ml-4 ">
-          <h4 className="font-poppins font-semibold text-[20px] leading-[32px] text-white">
+          <h4 className="font-poppins font-semibold text-[1rem] leading-[1.6] text-white">
             {name}
           </h4>
-          <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+          <p className="font-poppins font-normal text-[0.9rem] leading-[1.6] text-dimWhite">
             {title}
           </p>
         </div>

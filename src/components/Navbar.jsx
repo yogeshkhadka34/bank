@@ -8,9 +8,9 @@ const Navbar = () => {
   const [isToggle, setToggle] = useState(false);
 
   return (
-    <>
+    <div className="container">
       {/* Navbar Container */}
-      <div className=" flex justify-between py-4 relative container mt-8 sm:mt-4 ml-4 sm:ml-0">
+      <div className=" flex justify-between py-4 relative  mt-8 sm:mt-4 ml-4 sm:ml-0">
         {/* Logo */}
         <div>
           <div
@@ -49,7 +49,7 @@ const Navbar = () => {
               </ul>
             </div>
             <button
-              className="flex  h-[20px] w-[20px] shrink-0 mr-10  ss:mr-24  ss:h-[24px] ss:w-[24px] sm:hidden"
+              className="flex  h-[20px] w-[20px] ss:h-[24px] ss:w-[24px] sm:hidden"
               onClick={() => setToggle((prev) => !prev)}
             >
               {isToggle ? (
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          <div className="flex  bg-[red]">
+          <div className="flex  ">
             {/* Mobile Options */}
             {isToggle && (
               <div
@@ -89,7 +89,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

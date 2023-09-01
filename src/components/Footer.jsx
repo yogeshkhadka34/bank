@@ -3,20 +3,20 @@ import { logo } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
-  <section className="hidden container sm:flex justify-center items-center flex-col mt-16 bg-black-gradient-2 rounded-[20px] py-10 mb-10">
+  <section className="container flex justify-center items-center flex-col mt-16 bg-black-gradient-2 sm:rounded-[20px] py-10 sm:mb-10">
     <div className="flex justify-center items-center md:flex-row flex-col mb-8 w-full">
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img
           src={logo}
           alt="hoobank"
-          className="w-[266px] h-[72.14px] object-contain"
+          className="w-[8rem] h-[2.25rem] md:w-[16rem] md:h-[4.5rem] object-contain"
         />
-        <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] mt-4 max-w-[312px]">
+        <p className="font-poppins  font-normal text-dimWhite text-[1rem] md:text-[1.2rem] leading-[30.8px] mt-4 max-w-[312px]">
           A new way to make the payments easy, reliable and secure.
         </p>
       </div>
 
-      <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
+      <div className="hidden flex-[1.5] w-full sm:flex flex-row justify-between flex-wrap md:mt-0 mt-10">
         {footerLinks.map((footerlink) => (
           <div
             key={footerlink.title}
@@ -43,7 +43,7 @@ const Footer = () => (
     </div>
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-      <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+      <p className="font-poppins font-normal text-center text-[1rem] md:text-[1.2rem] leading-[1.6] text-white">
         Copyright Ⓒ 2022 HooBank. All Rights Reserved.
       </p>
 

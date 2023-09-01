@@ -3,23 +3,23 @@ import Button from "./common/Button";
 
 const CTA = () => {
   return (
-    <div className="  mt-10 pb-10 container hidden md:block ">
-      <div className="py-4 flex items-center justify-center bg-black-gradient-2 rounded-[20px] box-shadow">
-        <div className="flex flex-col flex-2 flex-start px-10 py-10">
+    <div className="  my-6 container ">
+      <div className="pt-4 pb-8 flex flex-col md:flex-row items-center justify-center md:justify-start bg-black-gradient-2 rounded-[20px] box-shadow">
+        <div className="flex flex-col items-center md:items-start flex-[0.6] px-10 py-10">
           <div>
-            <h2 className="font-poppins font-semibold xs:text-[32px] text-[32px] text-white xs:leading-[76.8px] leading-[66.8px]">
+            <h2 className="font-poppins font-semibold  text-[1.6rem] md:text-[2rem] text-white leading-[1.6] text-center">
               Let’s try our service now!{" "}
             </h2>
           </div>
-          <div className=" flex-1 mt-5">
-            <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] text-left max-w-[300px]">
+          <div className=" flex-1 flex items-center justify-center mt-4">
+            <p className="font-poppins font-normal text-center md:text-left text-dimWhite text-[0.9rem] md:text-[1.1rem] leading-[1.6]">
               Everything you need to accept card payments and grow your business
               anywhere on the planet.
             </p>
           </div>
         </div>
         {/* Button */}
-        <div className="flex flex-1 justify-center">
+        <div className="flex flex-[0.4] justify-center">
           <Button className="bg-secondary px-4 py-3 rounded-lg">
             Get Started
           </Button>
